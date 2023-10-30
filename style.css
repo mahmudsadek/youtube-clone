@@ -1,0 +1,411 @@
+body {
+   margin: 0;
+   overflow: hidden;
+   height: 100vh;
+   font-family: system-ui, -apple-system;;
+}
+* {
+   background-color: rgb(15, 15, 15);
+}
+
+.navbar {
+   height: 60px;
+/* background-color: aqua; */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: sticky;
+   top: 0;
+}
+
+.page-content {
+   display: flex;
+}
+
+.sidebar {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   /* height: 100%; */
+   overflow-y:auto;
+   overflow-x: hidden;
+}
+
+.content {
+   flex: 6;
+   overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+   position: relative;;
+}
+
+.nav-left {
+   display: flex;
+   flex: 1;
+}
+
+.img-menu {
+   padding: 10px;
+   height: 26px;
+   width:26px;
+   border-radius: 50%;
+   margin: 6px 10px 0px;
+}
+
+.img-menu:hover {
+   padding: 10px;
+   height: 26px;
+   width: 26px;
+   border-radius: 50%;
+   margin: 5px 10px 0px;
+   background-color: rgb(39, 39, 39);
+}
+
+.youtube-logo {
+   display: flex;
+
+   text-decoration: none;
+   align-items: center;
+}
+
+.youtube-img {
+   height: 75px;
+   /* margin-right: 10px; */
+}
+
+.nav-med {
+   flex: 3;
+   display: flex;
+   width: 60%;
+   align-items: center;
+   justify-content: center;
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   background-color: rgb(20,20,20);
+   border: 1px solid #ffffff21;
+   margin: 10px;
+   border-radius: 25px;
+   width: 65%;
+   justify-content:center ;
+}
+
+.search-input {
+   background-color: rgb(20,20,20);
+   border-style:none;
+   height: 31px;
+   margin-left: 15px;;
+   width: 100%;
+   font-size: 17px;
+}
+
+.search-btn {
+   width: 7%;
+   background-color:  rgb(40,40,40);
+   height: -webkit-fill-available;
+   border-radius: 25px;
+}
+
+.search-btn:hover  {
+   width: 7%;
+   background-color:  rgb(50,50,50);
+   height: -webkit-fill-available;
+   border-radius: 25px;
+   cursor: pointer;
+}
+
+.search-img {
+   margin: 9px 10px 9px 15px;
+   height: 20px;
+   width: 20px;
+   background-color:  rgb(40,40,40);
+}
+
+.search-btn:hover .search-img {
+   margin: 9px 10px 9px 15px;
+   height: 20px;
+   width: 20px;
+   background-color:  rgb(50,50,50);
+}
+
+.voice {
+   background-color:  rgb(40,40,40);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+.voice-img {
+   background-color:  rgb(40,40,40);
+   width: 42px;
+   height: 42px;
+   border-radius: 50%;
+}
+
+.voice-img:hover {
+   background-color:  rgb(50,50,50);
+   width: 42px;
+   height: 42px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.nav-right {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin-right: 10px;
+}
+
+.r-menu-item {
+   border-style: none;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   margin: 0px 10px;
+   display: flex;
+   justify-content: center;
+
+}
+
+.r-menu-item:hover {
+   background-color: rgb(40,40,40); ;
+   border-style: none;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+
+}
+
+.r-menu-item:hover img{
+   background-color: rgb(40,40,40); 
+   width: 30px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+
+.r-menu-img {
+   width: 30px;
+   border-radius: 50%;
+}
+
+.left-menu-contant {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   justify-content: flex-start;
+   margin-top: 10px;
+   text-decoration: none;
+   color: white;
+   border-radius: 15px;
+   margin-left: 5px;
+}
+
+.left-menu-head {
+   color: white;
+   margin-left: 5px;
+   margin-top: 20px;
+   text-decoration: none;
+}
+
+.left-menu-contant:hover {
+   display: flex;
+   background-color: rgb(40,40,40);
+   align-items: center;
+   height: 40px;
+   justify-content: flex-start;
+   margin-top: 10px;
+   margin-left: 5px;
+   text-decoration: none;
+   color: white;
+   border-radius: 15px;
+}
+
+.left-menu-contant:hover *{
+   background-color: rgb(40,40,40); ;
+}
+
+.left-menu-image {
+   width: 30px;
+   margin: 0px 10px;
+   border-radius: 50%;
+}
+
+.suggestions {
+   height: 50px;
+   display: flex;
+   flex-direction: row;
+   overflow-x: hidden;
+}
+
+.sugg-content {
+   color: white;
+   font-weight: bold;
+   margin: 5px 5px 10px;
+   padding: 5px 10px;
+   border-style: none;
+   border-radius: 10px;
+   background-color:  rgb(30,30,30);
+}
+
+.sugg-content:hover {
+   color: white;
+   font-weight: bold;
+   margin: 5px 5px 10px;
+   padding: 5px 10px;
+   border-style: none;
+   border-radius: 10px;
+   background-color:  rgb(40,40,40);
+   cursor: pointer;
+}
+
+.active {
+   background-color: white;
+   color: black;
+}
+
+.active:hover {
+   background-color: white;
+   color: black;
+   cursor: pointer;
+}
+
+.videos {
+   display: flex;
+   flex-wrap: wrap;
+   overflow-y: auto;
+   position: absolute;
+   left: 0;
+   top: 50px;
+   right: 0;
+   bottom: 0;
+}
+
+.video {
+   display: flex;
+   flex-direction: column;
+   width: 23%;
+   margin: 10px;
+}
+.video:hover {
+   display: flex;
+   flex-direction: column;
+   width: 23%;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.vid-img {
+   width: auto;
+   border-radius: 7px;
+}
+
+.vid-info {
+   margin-top: 5px;
+   display: flex;
+   align-items: center;
+   justify-content:flex-start;
+}
+
+.usr-img {
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+}
+
+.vid-details {
+   display: flex;
+   flex-direction: column;
+}
+
+.text-color {
+   color: rgb(175, 175, 175);
+   font-size: small;
+   text-decoration: none;
+   font-family: system-ui, -apple-system;
+}
+
+.vid-title {
+   font-family: system-ui, -apple-system;
+   color: white;
+   font-size: medium;
+   font-weight: 500;
+}
+
+@media only screen and (max-width: 1300px) {
+   /* For mobile phones: */
+   .video {
+      width: 30%;
+      margin: auto;
+      padding-bottom: 10px;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   /* For mobile phones: */
+   .video {
+      width: 45%;
+      margin: auto;
+      padding-bottom: 10px;
+   }
+   
+   .video:hover {
+      width: 45%;
+      margin: auto;
+      padding-bottom: 10px;
+      cursor: pointer;
+   }
+   .l-m-text {
+      visibility: hidden;
+   }
+
+}
+@media only screen and (max-width: 768px) {
+   /* For mobile phones: */
+   .video {
+      width: 80%;
+      margin: auto;
+      padding-bottom: 10px;
+   }
+   .video:hover {
+      width:80% ;
+      margin: auto;
+      padding-bottom: 10px;
+      cursor: pointer;
+   }
+   
+   .l-m-text {
+      visibility: hidden;
+   }
+   
+   .suggestions {
+      visibility: hidden;
+   }
+   
+   .hidden-mod {
+      display: none;
+   }
+   
+   .search-input {
+      width: 70%;
+   }
+}
+
+::-webkit-scrollbar {
+   width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #4d4d4d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #7e7e7e;
+}
